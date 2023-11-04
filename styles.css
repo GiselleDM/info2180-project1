@@ -67,11 +67,12 @@ nav ul li a:hover {
 }
 
 /* Learn About section styles */
+/* Learn About section styles */
 .learn-about {
     padding: 50px 0;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    display: flex; /* Use flex layout */
+    flex-wrap: wrap; /* Wrap elements to the next row when needed */
+    gap: 20px; /* Add some spacing between cards */
 }
 
 .card {
@@ -79,8 +80,7 @@ nav ul li a:hover {
     padding: 20px;
     text-align: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border: 1px solid #E2E8F0; /* Border color for cards */
-    border-radius: 5px; /* Rounded corners for cards */
+    flex: 1; /* Each card takes an equal amount of space */
 }
 
 .card img {
@@ -91,8 +91,18 @@ nav ul li a:hover {
 .card h3 {
     margin: 15px 0;
     font-size: 21px; /* Font size for card headings */
-    color: #48BB78; /* Card heading color */
+    color: #48BB78; /* Heading color */
 }
+
+.card p {
+    font-size: 14px;
+}
+
+.card {
+    border: 1px solid #E2E8F0; /* Add a border to each card with the specified color */
+    border-radius: 5px; /* Add rounded corners to each card */
+}
+
 
 /* COVID-19 Testing Programme section styles */
 .testing {
@@ -125,6 +135,7 @@ nav ul li a:hover {
     background-color: #5A67D8; /* Button background color on hover */
 }
 
+/* Recent Stories section styles */
 /* Recent Stories section styles */
 .stories {
     background-color: #f9f9f9;
