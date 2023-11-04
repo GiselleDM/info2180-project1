@@ -1,11 +1,32 @@
-/* Add your CSS to this file */
-body {
-    margin: 0;
-    font-size: 16px;
+/* COVID-19 Testing Programme section styles */
+.testing {
+    background-color: #ffffff; /* Add background color as needed */
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.container {
-    margin: 0 auto;
-    max-width: 960px;
-    width: 100%;
+.testing-desciption {
+    flex: 1; /* Make the text take up half the width */
+    padding: 0 20px; /* Adjust the spacing as needed */
+}
+
+.cta {
+    flex: 1; /* Make the button take up half the width */
+    text-align: right; /* Align the button to the right */
+}
+
+.cta .btn {
+    background-color: #007BFF; /* Button background color */
+    color: #fff; /* Button text color */
+    padding: 10px 20px; /* Add padding to the button */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    text-decoration: none; /* Remove default link underline */
+    display: inline-block;
+}
+
+.cta .btn:hover {
+    background-color: #0056b3; /* Button background color on hover */
 }
