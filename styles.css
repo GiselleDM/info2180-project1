@@ -1,3 +1,91 @@
+/* Add your CSS to this file */
+body {
+    margin: 0;
+    font-size: 16px;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 960px;
+    width: 100%;
+}
+
+/* Header section styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+/* Overview Hero section styles */
+/* Hero Overview section styles */
+.overview-hero {
+    background-color: lightblue; /* Add your desired background color here */
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+}
+
+.overview-hero-image {
+    flex: 1; /* Make the image take up half the width */
+    text-align: center; /* Center the image horizontally */
+}
+
+.overview-hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.overview-hero-text {
+    flex: 1; /* Make the text take up half the width */
+    padding: 0 20px; /* Adjust the spacing as needed */
+}
+
+/* Ensure the text is on the right */
+.overview-hero h2 {
+    text-align: left;
+}
+
+.overview-hero p {
+    text-align: left;
+}
+
+/* Learn About section styles */
+.learn-about {
+    padding: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Create 3 equal columns */
+    gap: 20px; /* Add some spacing between cards */
+}
+
+.card {
+    background-color: #fff; /* Add background color for each card */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a box shadow for each card */
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card h3 {
+    margin: 15px 0;
+}
+
+.card p {
+    font-size: 14px;
+}
 /* COVID-19 Testing Programme section styles */
 .testing {
     background-color: #ffffff; /* Add background color as needed */
@@ -28,5 +116,106 @@
 }
 
 .cta .btn:hover {
+    background-color: #0056b3; /* Button background color on hover */
+}
+
+/* Recent Stories section styles */
+.stories {
+    background-color: #f9f9f9; /* Add your desired background color here */
+    padding: 50px 0;
+}
+
+.stories .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.article {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.article img {
+    max-width: 100%;
+    height: auto;
+}
+
+.article-body {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.article-body h3 {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.article-body p {
+    margin-top: 10px;
+}
+
+.article-body a {
+    display: inline-block;
+    background-color: #007BFF; /* Button background color */
+    color: #fff; /* Button text color */
+    padding: 10px 20px; /* Add padding to the button */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    text-decoration: none; /* Remove default link underline */
+    margin-top: 10px;
+}
+
+.article-body a:hover {
+    background-color: #0056b3; /* Button background color on hover */
+}
+/* Newsletter section styles */
+.newsletter {
+    background-color: #f9f9f9; /* Add your desired background color here */
+    padding: 50px 0;
+    text-align: center; /* Center the contents */
+}
+
+.newsletter .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the form and button */
+    align-items: center; /* Center vertically within the section */
+}
+
+.newsletter h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.newsletter form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the input and button */
+    align-items: center; /* Center vertically within the form */
+}
+
+.newsletter .form-group {
+    margin-right: 10px;
+}
+
+.newsletter input[type="email"] {
+    width: 100%; /* Ensure the input takes up the full available width */
+    padding: 10px;
+    font-size: 16px;
+}
+
+.newsletter button[type="submit"] {
+    background-color: #007BFF; /* Button background color */
+    color: #fff; /* Button text color */
+    padding: 10px 20px; /* Add padding to the button */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    text-decoration: none; /* Remove default link underline */
+    cursor: pointer; /* Add a pointer cursor on hover */
+}
+
+.newsletter button[type="submit"]:hover {
     background-color: #0056b3; /* Button background color on hover */
 }
